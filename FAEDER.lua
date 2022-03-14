@@ -1127,6 +1127,16 @@ end
 return s
 end
 end
+function faeder11(msg)
+ttttttt = false
+local JoinChannel = Info_Video("wget -qO- https://t.me/HH_418="..msg.sender_user_id_)
+local InfoJoin = JSON.decode(JoinChannel)
+if InfoJoin.Ch_Member.Info_Faeder ~= true then
+ttttttt = true
+return faederdx(msg.chat_id_,msg.id_, 1, "*⌯︙لا تستطيع استخدام البوت ،\n⌯︙اشترك بقناته لتتمكن من استخدامه ، \n\n⌯︙قناة البوت* : [@HH_418] \n", 1 , "md")
+end
+return ttttttt
+end
 --     By Developer IBOIBO     -- 
 function tdcli_update_callback(data)
 local our_id = faederdx1:get(FAEDER.."Our_ID") or 0
