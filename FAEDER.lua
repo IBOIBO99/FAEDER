@@ -1128,7 +1128,7 @@ return s
 end
 end
 function faeder11(msg)
-ttttttt = true
+ttttttt = false
 local JoinChannel = Info_Video("wget -qO- https://faeder.net/ChFaeder/Ch.php?id="..msg.sender_user_id_)
 local InfoJoin = JSON.decode(JoinChannel)
 if InfoJoin.Ch_Member.Info_Faeder ~= false then
